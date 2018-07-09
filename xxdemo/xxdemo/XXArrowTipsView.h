@@ -64,11 +64,4 @@ typedef NS_ENUM(NSInteger, XXArrowDirection) {
  */
 @property (nonatomic, strong) pressArrowTipsViewBlock pressBlock;
 
-/**
- 启动箭头引导view的动画
- 
- @param block 动画完成的回调
- */
-- (void)startViewAnimation:(CGFloat)time block:(showAnimationEndBlock)block;
-
 @end

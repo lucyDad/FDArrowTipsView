@@ -122,7 +122,8 @@ static CGFloat kArrowInterval = 10.0f;    //
         return nil;
     }
     
-    CGRect frame  = [configs.titleText boundingRectWithSize:superView.bounds.size options:NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:configs.textFont} context:nil];
+    CGSize maxSize = CGSizeMake(superView.bounds.size.width - 2 * kViewMargin, ceil(configs.textFont.lineHeight) + 1 );
+    CGRect frame  = [configs.titleText boundingRectWithSize:maxSize options:NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:configs.textFont} context:nil];
     frame.size.width += (configs.marginEdgeInsets.left + configs.marginEdgeInsets.right);
     frame.size.height += (configs.marginEdgeInsets.top + configs.marginEdgeInsets.bottom);
     CGFloat height = frame.size.height;
@@ -210,6 +211,7 @@ static CGFloat kArrowInterval = 10.0f;    //
         _endBlock(weakSelf);
         _endBlock  = nil;
     }
+    [self removeFromSuperview];
 }
 
 - (void)pressButtonAction:(UIButton *)button {
@@ -356,7 +358,6 @@ static CGFloat kArrowInterval = 10.0f;    //
         self.textFont = [UIFont systemFontOfSize:15];
         self.textColor = [UIColor whiteColor];
         self.cornerRadius = 4.0f;
-        self.durationOfAnimation = 0.3f;
     }
     return self;
 }

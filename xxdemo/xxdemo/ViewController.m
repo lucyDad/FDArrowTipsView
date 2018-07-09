@@ -11,6 +11,9 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *msgLabel;
+
+
 @end
 
 @implementation ViewController
@@ -18,6 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self showArrowTipsView1];
+    [self showArrowTipsView2];
+    [self showArrowTipsView3];
 }
 
 
@@ -27,10 +33,10 @@
 }
 
 
-- (IBAction)showArrowAction:(UIButton *)sender {
+- (void)showArrowTipsView1 {
     
     CGFloat interval = 10;
-    CGRect frame = sender.frame;
+    CGRect frame = self.msgLabel.frame;
     CGPoint point = CGPointMake(frame.origin.x + frame.size.width / 2, frame.origin.y + frame.size.height + interval);
     XXArrowTipsViewConfigs *configs = [[XXArrowTipsViewConfigs alloc] init];
     configs.titleText = @"箭头展示，文字方向等自由设置";
@@ -42,30 +48,26 @@
     };
 }
 
-- (IBAction)showArrowAnimationAction:(UIButton *)sender {
+- (void)showArrowTipsView2 {
     
-    CGFloat interval = 10;
-    CGRect frame = sender.frame;
-    CGPoint point = CGPointMake(frame.origin.x + frame.size.width / 2, frame.origin.y + frame.size.height + interval);
+    CGPoint point = CGPointMake(150, 100);
     XXArrowTipsViewConfigs *configs = [[XXArrowTipsViewConfigs alloc] init];
-    configs.titleText = @"箭头展示，文字方向等自由设置;箭头展示，文字方向等自由设置;箭头展示，文字方向等自由设置;箭头展示，文字方向等自由设置";
-    configs.arrowDirection = XXArrowDirection_Bottom;
+    configs.titleText = @"箭头展示，文字方向等自由设置;";
+    configs.arrowDirection = XXArrowDirection_Top;
     
     XXArrowTipsView *arrowView = [XXArrowTipsView showInSuperView:self.view point:point configs:configs];
-    [arrowView startViewAnimation:^(XXArrowTipsView *view) {
+    [arrowView startViewAnimation:5 block:^(XXArrowTipsView *view) {
 
         NSLog(@"动画结束");
         //[view removeFromSuperview];
     }];
 }
 
-- (IBAction)showArrowLevelAction:(UIButton *)sender {
+- (void)showArrowTipsView3 {
     
-    CGFloat interval = 10;
-    CGRect frame = [sender.superview convertRect:sender.frame toView:self.view];
-    CGPoint point = CGPointMake(frame.origin.x + frame.size.width / 2, frame.origin.y + frame.size.height + interval);
+    CGPoint point = CGPointMake(300, 200);
     XXArrowTipsViewConfigs *configs = [[XXArrowTipsViewConfigs alloc] init];
-    configs.titleText = @"箭头展示，文字方向等自由设置";
+    configs.titleText = @"箭头的文字，不过目前有最长的限制";
     configs.arrowDirection = XXArrowDirection_Bottom;
     
     [XXArrowTipsView showInSuperView:self.view point:point configs:configs];
