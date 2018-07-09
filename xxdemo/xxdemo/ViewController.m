@@ -39,38 +39,36 @@
     CGRect frame = self.msgLabel.frame;
     CGPoint point = CGPointMake(frame.origin.x + frame.size.width / 2, frame.origin.y + frame.size.height + interval);
     XXArrowTipsViewConfigs *configs = [[XXArrowTipsViewConfigs alloc] init];
-    configs.titleText = @"箭头展示，文字方向等自由设置";
+    configs.titleText = @"箭头展示，渐变颜色可配置";
     configs.arrowDirection = XXArrowDirection_Top;
     configs.gradientColors = @[[UIColor redColor], [UIColor greenColor]];
-    XXArrowTipsView *arrowView = [XXArrowTipsView showInSuperView:self.view point:point configs:configs];
-    arrowView.pressBlock = ^(XXArrowTipsView *view) {
-        [view removeFromSuperview];
-    };
+    [XXArrowTipsView showInSuperView:self.view point:point configs:configs];
 }
 
 - (void)showArrowTipsView2 {
     
-    CGPoint point = CGPointMake(150, 100);
+    CGPoint point = CGPointMake(100, 200);
     XXArrowTipsViewConfigs *configs = [[XXArrowTipsViewConfigs alloc] init];
     configs.titleText = @"箭头展示，文字方向等自由设置;";
     configs.arrowDirection = XXArrowDirection_Top;
     
     XXArrowTipsView *arrowView = [XXArrowTipsView showInSuperView:self.view point:point configs:configs];
-    [arrowView startViewAnimation:5 block:^(XXArrowTipsView *view) {
-
+    [arrowView startShowTimer:5 block:^(XXArrowTipsView *view) {
         NSLog(@"动画结束");
-        //[view removeFromSuperview];
     }];
 }
 
 - (void)showArrowTipsView3 {
     
-    CGPoint point = CGPointMake(300, 200);
+    CGPoint point = CGPointMake(100, 400);
     XXArrowTipsViewConfigs *configs = [[XXArrowTipsViewConfigs alloc] init];
-    configs.titleText = @"箭头的文字，不过目前有最长的限制";
+    configs.titleText = @"箭头的文字，不过目前有最长的限制，点击可消失";
     configs.arrowDirection = XXArrowDirection_Bottom;
     
-    [XXArrowTipsView showInSuperView:self.view point:point configs:configs];
+    XXArrowTipsView *arrowView = [XXArrowTipsView showInSuperView:self.view point:point configs:configs];
+    arrowView.pressBlock = ^(XXArrowTipsView *view) {
+        [view removeFromSuperview];
+    };
 }
 
 @end
