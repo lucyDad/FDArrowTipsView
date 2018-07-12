@@ -13,8 +13,8 @@
 		047CCE8020EF849400D0E107 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047CCE7F20EF849400D0E107 /* Assets.xcassets */; };
 		047CCE8320EF849400D0E107 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047CCE8120EF849400D0E107 /* LaunchScreen.storyboard */; };
 		047CCE8620EF849400D0E107 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CCE8520EF849400D0E107 /* main.m */; };
-		047CCE9020EF84CE00D0E107 /* XXArrowTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CCE8C20EF84CD00D0E107 /* XXArrowTipsView.m */; };
-		047CCE9120EF84CE00D0E107 /* UIView+ColorOfPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CCE8D20EF84CD00D0E107 /* UIView+ColorOfPoint.m */; };
+		047CCED920F72D3C00D0E107 /* UIView+ColorOfPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CCED520F72D3C00D0E107 /* UIView+ColorOfPoint.m */; };
+		047CCEDA20F72D3C00D0E107 /* XXArrowTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CCED720F72D3C00D0E107 /* XXArrowTipsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		047CCE8220EF849400D0E107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		047CCE8420EF849400D0E107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		047CCE8520EF849400D0E107 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		047CCE8C20EF84CD00D0E107 /* XXArrowTipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXArrowTipsView.m; sourceTree = "<group>"; };
-		047CCE8D20EF84CD00D0E107 /* UIView+ColorOfPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ColorOfPoint.m"; sourceTree = "<group>"; };
-		047CCE8E20EF84CD00D0E107 /* XXArrowTipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXArrowTipsView.h; sourceTree = "<group>"; };
-		047CCE8F20EF84CD00D0E107 /* UIView+ColorOfPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ColorOfPoint.h"; sourceTree = "<group>"; };
+		047CCED520F72D3C00D0E107 /* UIView+ColorOfPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ColorOfPoint.m"; sourceTree = "<group>"; };
+		047CCED620F72D3C00D0E107 /* XXArrowTipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXArrowTipsView.h; sourceTree = "<group>"; };
+		047CCED720F72D3C00D0E107 /* XXArrowTipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXArrowTipsView.m; sourceTree = "<group>"; };
+		047CCED820F72D3C00D0E107 /* UIView+ColorOfPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ColorOfPoint.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +64,7 @@
 		047CCE7520EF849200D0E107 /* xxdemo */ = {
 			isa = PBXGroup;
 			children = (
-				047CCE8F20EF84CD00D0E107 /* UIView+ColorOfPoint.h */,
-				047CCE8D20EF84CD00D0E107 /* UIView+ColorOfPoint.m */,
-				047CCE8E20EF84CD00D0E107 /* XXArrowTipsView.h */,
-				047CCE8C20EF84CD00D0E107 /* XXArrowTipsView.m */,
+				047CCED420F72D3C00D0E107 /* XXArrowTips */,
 				047CCE7620EF849200D0E107 /* AppDelegate.h */,
 				047CCE7720EF849200D0E107 /* AppDelegate.m */,
 				047CCE7920EF849200D0E107 /* ViewController.h */,
@@ -79,6 +76,18 @@
 				047CCE8520EF849400D0E107 /* main.m */,
 			);
 			path = xxdemo;
+			sourceTree = "<group>";
+		};
+		047CCED420F72D3C00D0E107 /* XXArrowTips */ = {
+			isa = PBXGroup;
+			children = (
+				047CCED520F72D3C00D0E107 /* UIView+ColorOfPoint.m */,
+				047CCED620F72D3C00D0E107 /* XXArrowTipsView.h */,
+				047CCED720F72D3C00D0E107 /* XXArrowTipsView.m */,
+				047CCED820F72D3C00D0E107 /* UIView+ColorOfPoint.h */,
+			);
+			name = XXArrowTips;
+			path = ../../XXArrowTips;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,9 +162,9 @@
 			files = (
 				047CCE7B20EF849200D0E107 /* ViewController.m in Sources */,
 				047CCE8620EF849400D0E107 /* main.m in Sources */,
-				047CCE9120EF84CE00D0E107 /* UIView+ColorOfPoint.m in Sources */,
-				047CCE9020EF84CE00D0E107 /* XXArrowTipsView.m in Sources */,
+				047CCED920F72D3C00D0E107 /* UIView+ColorOfPoint.m in Sources */,
 				047CCE7820EF849200D0E107 /* AppDelegate.m in Sources */,
+				047CCEDA20F72D3C00D0E107 /* XXArrowTipsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
