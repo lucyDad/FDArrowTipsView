@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,8 +13,13 @@
 		047CCE8020EF849400D0E107 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047CCE7F20EF849400D0E107 /* Assets.xcassets */; };
 		047CCE8320EF849400D0E107 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047CCE8120EF849400D0E107 /* LaunchScreen.storyboard */; };
 		047CCE8620EF849400D0E107 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CCE8520EF849400D0E107 /* main.m */; };
-		047CCED920F72D3C00D0E107 /* UIView+ColorOfPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CCED520F72D3C00D0E107 /* UIView+ColorOfPoint.m */; };
-		047CCEDA20F72D3C00D0E107 /* XXArrowTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CCED720F72D3C00D0E107 /* XXArrowTipsView.m */; };
+		86845AAC6CB8F10750B41FF8 /* Pods_xxdemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768A1CE419F866141921F4C2 /* Pods_xxdemo.framework */; };
+		BFBFA63D23B5B3F900491FB5 /* UIView+ArrowTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBFA63123B5B3F900491FB5 /* UIView+ArrowTipsView.m */; };
+		BFBFA63E23B5B3F900491FB5 /* FDAnimationManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBFA63223B5B3F900491FB5 /* FDAnimationManagerView.m */; };
+		BFBFA63F23B5B3F900491FB5 /* FDArrowCustomListView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBFA63323B5B3F900491FB5 /* FDArrowCustomListView.m */; };
+		BFBFA64023B5B3F900491FB5 /* FDArrowTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBFA63423B5B3F900491FB5 /* FDArrowTipsView.m */; };
+		BFBFA64123B5B3F900491FB5 /* UIView+ColorOfPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBFA63923B5B3F900491FB5 /* UIView+ColorOfPoint.m */; };
+		BFBFA64223B5B3F900491FB5 /* XXArrowTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBFA63B23B5B3F900491FB5 /* XXArrowTipsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +33,22 @@
 		047CCE8220EF849400D0E107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		047CCE8420EF849400D0E107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		047CCE8520EF849400D0E107 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		047CCED520F72D3C00D0E107 /* UIView+ColorOfPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ColorOfPoint.m"; sourceTree = "<group>"; };
-		047CCED620F72D3C00D0E107 /* XXArrowTipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXArrowTipsView.h; sourceTree = "<group>"; };
-		047CCED720F72D3C00D0E107 /* XXArrowTipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXArrowTipsView.m; sourceTree = "<group>"; };
-		047CCED820F72D3C00D0E107 /* UIView+ColorOfPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ColorOfPoint.h"; sourceTree = "<group>"; };
+		68F9763417F0236A7D7006B3 /* Pods-xxdemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xxdemo.debug.xcconfig"; path = "Target Support Files/Pods-xxdemo/Pods-xxdemo.debug.xcconfig"; sourceTree = "<group>"; };
+		768A1CE419F866141921F4C2 /* Pods_xxdemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xxdemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBFA63023B5B3F900491FB5 /* FDArrowTipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDArrowTipsView.h; sourceTree = "<group>"; };
+		BFBFA63123B5B3F900491FB5 /* UIView+ArrowTipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ArrowTipsView.m"; sourceTree = "<group>"; };
+		BFBFA63223B5B3F900491FB5 /* FDAnimationManagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDAnimationManagerView.m; sourceTree = "<group>"; };
+		BFBFA63323B5B3F900491FB5 /* FDArrowCustomListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDArrowCustomListView.m; sourceTree = "<group>"; };
+		BFBFA63423B5B3F900491FB5 /* FDArrowTipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDArrowTipsView.m; sourceTree = "<group>"; };
+		BFBFA63523B5B3F900491FB5 /* FDAnimationManagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAnimationManagerView.h; sourceTree = "<group>"; };
+		BFBFA63623B5B3F900491FB5 /* UIView+ArrowTipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ArrowTipsView.h"; sourceTree = "<group>"; };
+		BFBFA63723B5B3F900491FB5 /* FDArrowCustomListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDArrowCustomListView.h; sourceTree = "<group>"; };
+		BFBFA63923B5B3F900491FB5 /* UIView+ColorOfPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ColorOfPoint.m"; sourceTree = "<group>"; };
+		BFBFA63A23B5B3F900491FB5 /* XXArrowTipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXArrowTipsView.h; sourceTree = "<group>"; };
+		BFBFA63B23B5B3F900491FB5 /* XXArrowTipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXArrowTipsView.m; sourceTree = "<group>"; };
+		BFBFA63C23B5B3F900491FB5 /* UIView+ColorOfPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ColorOfPoint.h"; sourceTree = "<group>"; };
+		BFFB8ED923B5F2C7007291C7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EE119FAE0291CB900EFAE6E3 /* Pods-xxdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xxdemo.release.xcconfig"; path = "Target Support Files/Pods-xxdemo/Pods-xxdemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86845AAC6CB8F10750B41FF8 /* Pods_xxdemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +68,8 @@
 			children = (
 				047CCE7520EF849200D0E107 /* xxdemo */,
 				047CCE7420EF849200D0E107 /* Products */,
+				0FBB160D197D1E453F3AE418 /* Pods */,
+				D839AB53D89F8EFC96073EFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,7 +84,8 @@
 		047CCE7520EF849200D0E107 /* xxdemo */ = {
 			isa = PBXGroup;
 			children = (
-				047CCED420F72D3C00D0E107 /* XXArrowTips */,
+				BFBFA62F23B5B3F900491FB5 /* ArrowTipsView */,
+				BFBFA63823B5B3F900491FB5 /* XXArrowTips */,
 				047CCE7620EF849200D0E107 /* AppDelegate.h */,
 				047CCE7720EF849200D0E107 /* AppDelegate.m */,
 				047CCE7920EF849200D0E107 /* ViewController.h */,
@@ -74,20 +95,54 @@
 				047CCE8120EF849400D0E107 /* LaunchScreen.storyboard */,
 				047CCE8420EF849400D0E107 /* Info.plist */,
 				047CCE8520EF849400D0E107 /* main.m */,
+				BFFB8ED923B5F2C7007291C7 /* PrefixHeader.pch */,
 			);
 			path = xxdemo;
 			sourceTree = "<group>";
 		};
-		047CCED420F72D3C00D0E107 /* XXArrowTips */ = {
+		0FBB160D197D1E453F3AE418 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				047CCED520F72D3C00D0E107 /* UIView+ColorOfPoint.m */,
-				047CCED620F72D3C00D0E107 /* XXArrowTipsView.h */,
-				047CCED720F72D3C00D0E107 /* XXArrowTipsView.m */,
-				047CCED820F72D3C00D0E107 /* UIView+ColorOfPoint.h */,
+				68F9763417F0236A7D7006B3 /* Pods-xxdemo.debug.xcconfig */,
+				EE119FAE0291CB900EFAE6E3 /* Pods-xxdemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BFBFA62F23B5B3F900491FB5 /* ArrowTipsView */ = {
+			isa = PBXGroup;
+			children = (
+				BFBFA63023B5B3F900491FB5 /* FDArrowTipsView.h */,
+				BFBFA63423B5B3F900491FB5 /* FDArrowTipsView.m */,
+				BFBFA63623B5B3F900491FB5 /* UIView+ArrowTipsView.h */,
+				BFBFA63123B5B3F900491FB5 /* UIView+ArrowTipsView.m */,
+				BFBFA63523B5B3F900491FB5 /* FDAnimationManagerView.h */,
+				BFBFA63223B5B3F900491FB5 /* FDAnimationManagerView.m */,
+				BFBFA63723B5B3F900491FB5 /* FDArrowCustomListView.h */,
+				BFBFA63323B5B3F900491FB5 /* FDArrowCustomListView.m */,
+			);
+			name = ArrowTipsView;
+			path = ../../ArrowTipsView;
+			sourceTree = "<group>";
+		};
+		BFBFA63823B5B3F900491FB5 /* XXArrowTips */ = {
+			isa = PBXGroup;
+			children = (
+				BFBFA63923B5B3F900491FB5 /* UIView+ColorOfPoint.m */,
+				BFBFA63A23B5B3F900491FB5 /* XXArrowTipsView.h */,
+				BFBFA63B23B5B3F900491FB5 /* XXArrowTipsView.m */,
+				BFBFA63C23B5B3F900491FB5 /* UIView+ColorOfPoint.h */,
 			);
 			name = XXArrowTips;
 			path = ../../XXArrowTips;
+			sourceTree = "<group>";
+		};
+		D839AB53D89F8EFC96073EFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				768A1CE419F866141921F4C2 /* Pods_xxdemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 047CCE8920EF849400D0E107 /* Build configuration list for PBXNativeTarget "xxdemo" */;
 			buildPhases = (
+				38CF668F29FBBE692FADA9C6 /* [CP] Check Pods Manifest.lock */,
 				047CCE6F20EF849200D0E107 /* Sources */,
 				047CCE7020EF849200D0E107 /* Frameworks */,
 				047CCE7120EF849200D0E107 /* Resources */,
+				15568D9CB9DBC5A74619B9E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +212,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15568D9CB9DBC5A74619B9E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xxdemo/Pods-xxdemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xxdemo/Pods-xxdemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-xxdemo/Pods-xxdemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38CF668F29FBBE692FADA9C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-xxdemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		047CCE6F20EF849200D0E107 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -162,9 +261,13 @@
 			files = (
 				047CCE7B20EF849200D0E107 /* ViewController.m in Sources */,
 				047CCE8620EF849400D0E107 /* main.m in Sources */,
-				047CCED920F72D3C00D0E107 /* UIView+ColorOfPoint.m in Sources */,
+				BFBFA64123B5B3F900491FB5 /* UIView+ColorOfPoint.m in Sources */,
 				047CCE7820EF849200D0E107 /* AppDelegate.m in Sources */,
-				047CCEDA20F72D3C00D0E107 /* XXArrowTipsView.m in Sources */,
+				BFBFA64023B5B3F900491FB5 /* FDArrowTipsView.m in Sources */,
+				BFBFA63E23B5B3F900491FB5 /* FDAnimationManagerView.m in Sources */,
+				BFBFA63D23B5B3F900491FB5 /* UIView+ArrowTipsView.m in Sources */,
+				BFBFA63F23B5B3F900491FB5 /* FDArrowCustomListView.m in Sources */,
+				BFBFA64223B5B3F900491FB5 /* XXArrowTipsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,9 +405,12 @@
 		};
 		047CCE8A20EF849400D0E107 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68F9763417F0236A7D7006B3 /* Pods-xxdemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = xxdemo/PrefixHeader.pch;
 				INFOPLIST_FILE = xxdemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -318,9 +424,12 @@
 		};
 		047CCE8B20EF849400D0E107 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE119FAE0291CB900EFAE6E3 /* Pods-xxdemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = xxdemo/PrefixHeader.pch;
 				INFOPLIST_FILE = xxdemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
