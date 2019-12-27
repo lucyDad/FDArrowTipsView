@@ -18,8 +18,6 @@
 		BFBFA63E23B5B3F900491FB5 /* FDAnimationManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBFA63223B5B3F900491FB5 /* FDAnimationManagerView.m */; };
 		BFBFA63F23B5B3F900491FB5 /* FDArrowCustomListView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBFA63323B5B3F900491FB5 /* FDArrowCustomListView.m */; };
 		BFBFA64023B5B3F900491FB5 /* FDArrowTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBFA63423B5B3F900491FB5 /* FDArrowTipsView.m */; };
-		BFBFA64123B5B3F900491FB5 /* UIView+ColorOfPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBFA63923B5B3F900491FB5 /* UIView+ColorOfPoint.m */; };
-		BFBFA64223B5B3F900491FB5 /* XXArrowTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBFA63B23B5B3F900491FB5 /* XXArrowTipsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,10 +41,6 @@
 		BFBFA63523B5B3F900491FB5 /* FDAnimationManagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAnimationManagerView.h; sourceTree = "<group>"; };
 		BFBFA63623B5B3F900491FB5 /* UIView+ArrowTipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ArrowTipsView.h"; sourceTree = "<group>"; };
 		BFBFA63723B5B3F900491FB5 /* FDArrowCustomListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDArrowCustomListView.h; sourceTree = "<group>"; };
-		BFBFA63923B5B3F900491FB5 /* UIView+ColorOfPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ColorOfPoint.m"; sourceTree = "<group>"; };
-		BFBFA63A23B5B3F900491FB5 /* XXArrowTipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXArrowTipsView.h; sourceTree = "<group>"; };
-		BFBFA63B23B5B3F900491FB5 /* XXArrowTipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXArrowTipsView.m; sourceTree = "<group>"; };
-		BFBFA63C23B5B3F900491FB5 /* UIView+ColorOfPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ColorOfPoint.h"; sourceTree = "<group>"; };
 		BFFB8ED923B5F2C7007291C7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		EE119FAE0291CB900EFAE6E3 /* Pods-xxdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xxdemo.release.xcconfig"; path = "Target Support Files/Pods-xxdemo/Pods-xxdemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				BFBFA62F23B5B3F900491FB5 /* ArrowTipsView */,
-				BFBFA63823B5B3F900491FB5 /* XXArrowTips */,
 				047CCE7620EF849200D0E107 /* AppDelegate.h */,
 				047CCE7720EF849200D0E107 /* AppDelegate.m */,
 				047CCE7920EF849200D0E107 /* ViewController.h */,
@@ -112,10 +105,10 @@
 		BFBFA62F23B5B3F900491FB5 /* ArrowTipsView */ = {
 			isa = PBXGroup;
 			children = (
-				BFBFA63023B5B3F900491FB5 /* FDArrowTipsView.h */,
-				BFBFA63423B5B3F900491FB5 /* FDArrowTipsView.m */,
 				BFBFA63623B5B3F900491FB5 /* UIView+ArrowTipsView.h */,
 				BFBFA63123B5B3F900491FB5 /* UIView+ArrowTipsView.m */,
+				BFBFA63023B5B3F900491FB5 /* FDArrowTipsView.h */,
+				BFBFA63423B5B3F900491FB5 /* FDArrowTipsView.m */,
 				BFBFA63523B5B3F900491FB5 /* FDAnimationManagerView.h */,
 				BFBFA63223B5B3F900491FB5 /* FDAnimationManagerView.m */,
 				BFBFA63723B5B3F900491FB5 /* FDArrowCustomListView.h */,
@@ -123,18 +116,6 @@
 			);
 			name = ArrowTipsView;
 			path = ../../ArrowTipsView;
-			sourceTree = "<group>";
-		};
-		BFBFA63823B5B3F900491FB5 /* XXArrowTips */ = {
-			isa = PBXGroup;
-			children = (
-				BFBFA63923B5B3F900491FB5 /* UIView+ColorOfPoint.m */,
-				BFBFA63A23B5B3F900491FB5 /* XXArrowTipsView.h */,
-				BFBFA63B23B5B3F900491FB5 /* XXArrowTipsView.m */,
-				BFBFA63C23B5B3F900491FB5 /* UIView+ColorOfPoint.h */,
-			);
-			name = XXArrowTips;
-			path = ../../XXArrowTips;
 			sourceTree = "<group>";
 		};
 		D839AB53D89F8EFC96073EFC /* Frameworks */ = {
@@ -261,13 +242,11 @@
 			files = (
 				047CCE7B20EF849200D0E107 /* ViewController.m in Sources */,
 				047CCE8620EF849400D0E107 /* main.m in Sources */,
-				BFBFA64123B5B3F900491FB5 /* UIView+ColorOfPoint.m in Sources */,
 				047CCE7820EF849200D0E107 /* AppDelegate.m in Sources */,
 				BFBFA64023B5B3F900491FB5 /* FDArrowTipsView.m in Sources */,
 				BFBFA63E23B5B3F900491FB5 /* FDAnimationManagerView.m in Sources */,
 				BFBFA63D23B5B3F900491FB5 /* UIView+ArrowTipsView.m in Sources */,
 				BFBFA63F23B5B3F900491FB5 /* FDArrowCustomListView.m in Sources */,
-				BFBFA64223B5B3F900491FB5 /* XXArrowTipsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

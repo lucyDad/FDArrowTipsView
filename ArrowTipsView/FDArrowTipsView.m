@@ -33,8 +33,7 @@
         self.arrowSize = CGSizeMake(10, 10);
         
         self.autoAdjustPos = YES;
-        self.autoTimeOutClose = YES;
-        
+        self.timeOutTime = 3;
         self.animationTime = 0.5;
     }
     return self;

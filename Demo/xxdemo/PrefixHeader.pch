@@ -15,6 +15,7 @@
 #import <Masonry/Masonry.h>
 #import <YYCategories/UIView+YYAdd.h>
 #import <YYCategories/UIColor+YYAdd.h>
+#import <YYCategories/UIControl+YYAdd.h>
 #import <libextobjc/extobjc.h>
 
 #define FONT_MEDIUM_WITH_SIZE(SIZE) [UIFont fontWithName:@"PingFangSC-Medium" size:SIZE] //生成一个Medium字体的Font

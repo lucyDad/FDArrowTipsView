@@ -22,7 +22,8 @@
 
     FDArrowTipsViewConfig *config = [FDArrowTipsViewConfig new];
 
-    YYLabel *label = [self __textLabelForArrowTipsView:text maxWidth:maxWidth];
+    CGFloat showMaxWidth = MIN(maxWidth, self.width - config.contentEdgeInsets.left - config.contentEdgeInsets.right);
+    YYLabel *label = [self __textLabelForArrowTipsView:text maxWidth:showMaxWidth];
     
     FDArrowTipsView *tipsView = [self showArrowTipsViewWithConfig:config withCustomView:label point:point];
     @weakify(tipsView);
@@ -119,7 +120,7 @@
     };
     
     if (config.isStartTimer) {
-        [tipsView startShowTimerWithTime:3];
+        [tipsView startShowTimerWithTime:config.timeOutTime];
     }
     
     [tipsView startViewAnimation];
@@ -157,19 +158,11 @@
                                            point:(CGPoint)point {
     FDArrowTipsView *view = [[FDArrowTipsView alloc] initWithFrame:CGRectZero andConfig:config andCustomView:customView];
 
-#if 0
-    // 外部阴影
-    view.layer.shadowOffset = CGSizeMake(0, 0);
-    view.layer.shadowRadius = 3.0f;
-    view.layer.shadowOpacity = 1.0f;
-    view.layer.shadowColor = [UIColor redColor].CGColor;
-    view.layer.cornerRadius = 6.0f;
-    view.layer.masksToBounds = NO;
-#endif
-    
     [self __updatePositionWithTipsView:view point:point];
     
-    [view startShowTimerWithTime:3];
+    if (config.isStartTimer) {
+        [view startShowTimerWithTime:config.timeOutTime];
+    }
     
     [view startViewAnimation];
     

@@ -32,9 +32,11 @@ typedef NS_ENUM(NSInteger, FDArrowDirection) {
 @property (nonatomic, assign) FDArrowDirection  originDirection;    ///> 初始的箭头指向，默认top
 @property (nonatomic, assign) CGSize  arrowSize;    ///> 渐变结束点，默认[10, 10]
 
-@property (nonatomic, assign) BOOL  autoAdjustPos;  ///> 是否自动调整显示位置（默认YES）
+@property (nonatomic, assign) BOOL  autoAdjustPos;  ///> 是否自动调整显示位置（默认NO）
 @property (nonatomic, assign) BOOL  autoTimeOutClose;  ///> 是否超时自动关闭（默认YES）
 @property (nonatomic, assign) BOOL  isStartTimer;   ///> 是否启动定时器（默认NO）
+@property (nonatomic, assign) NSInteger  timeOutTime;   ///> 定时器超时的时长（默认3s）
+
 @property (nonatomic, assign) CGFloat  animationTime;   ///> 动画的时长（默认0.5s）
 
 @property (nonatomic, assign) CGFloat  fixedOffset; ///> 默认0.0, 设置了此值的话,如果point在正常范围内，则箭头偏移为固定值
