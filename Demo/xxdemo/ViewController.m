@@ -151,7 +151,7 @@ static NSString *kTableViewCellReuseIdentifier =  @"kTableViewCellReuseIdentifie
 }
 
 - (void)setupData {
-    self.arrDatas = @[@"文本的箭头", @"固定宽度的文本的箭头", @"不同箭头方向的文本的箭头", @"固定箭头偏移位置的文本的箭头", @"带列表的箭头"];
+    self.arrDatas = @[@"文本的箭头", @"固定宽度的文本的箭头", @"不同箭头方向的文本的箭头", @"固定箭头偏移位置的文本的箭头", @"带列表的箭头", @"带背景的文本箭头", @"带背景的列表箭头"];
 }
 
 - (void)showArrowTipsView_0 {
@@ -246,6 +246,41 @@ static NSString *kTableViewCellReuseIdentifier =  @"kTableViewCellReuseIdentifie
     [self.tableView showArrowTipsViewWithListConfig:listConfig withTipConfig:config withPoint:point clickBlock:^(NSInteger index) {
         LOGGO_INFO(@"click index = %zd", index);
     }];
+}
+
+- (void)showArrowTipsView_5 {
+    FDListViewCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:5 inSection:0]];
+    
+    CGRect frame = [cell.iconImageView.superview convertRect:cell.iconImageView.frame toView:self.tableView];
+    CGPoint point = CGPointMake(CGRectGetMidX(frame), CGRectGetMaxY(frame));
+    [self.tableView showArrowTipsBackgroundViewWithText:@"这里可以是很长的文案;这里可以是很长的文案这里可以是很长的文案这里可以是很长的文案这里可以是很长的文案这里可以是很长的文案这里可以是很长的文案这里可以是很长的文案这里可以是很长的文案" point:point];
+}
+
+- (void)showArrowTipsView_6 {
+    
+    FDListViewCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:6 inSection:0]];
+    
+    CGRect frame = [cell.iconImageView.superview convertRect:cell.iconImageView.frame toView:self.tableView];
+    CGPoint point = CGPointMake(CGRectGetMaxX(frame), CGRectGetMidY(frame));
+    
+    NSArray *titles = @[@"文字", @"相册", @"拍照", @"短视频", @"语音"];
+    NSArray *images = @[[UIImage imageNamed:@"arrow_popView_text"], [UIImage imageNamed:@"arrow_popView_album"], [UIImage imageNamed:@"arrow_popView_photo"],[UIImage imageNamed:@"arrow_popView_camera"], [UIImage imageNamed:@"arrow_popView_audio"]];
+    FDArrowCustomListViewConfig *listConfig = [FDArrowCustomListViewConfig new];
+    listConfig.cellHeight = 50;
+    listConfig.titles = titles;
+    listConfig.images = images;
+    listConfig.titleColor = [UIColor whiteColor];
+    
+    FDArrowTipsViewConfig *config = [FDArrowTipsViewConfig new];
+    config.contentCornerRadius = 5;
+    config.contentEdgeInsets = UIEdgeInsetsZero;
+    config.autoTimeOutClose = NO;
+    config.originDirection = FDArrowDirection_Left;
+    
+    FDAnimationManagerView *view = [self.tableView showArrowTipsBackgroundViewWithListConfig:listConfig withTipConfig:config withPoint:point clickBlock:^(NSInteger index) {
+        LOGGO_INFO(@"click index = %zd", index);
+    }];
+    view.backgroundColor = [UIColor colorWithRed:0.0f/255.0f green:0.0f/255.0f blue:0.0f/255.0f alpha:0.4f];
 }
 
 #pragma mark - Setter or Getter

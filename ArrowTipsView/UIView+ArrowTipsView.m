@@ -110,7 +110,7 @@
     animationConfig.animationContainerView = tipsView;
     animationConfig.managerType = FDAnimationManagerShowTypeMiddle;
     animationConfig.centerPoint = CGPointMake(CGRectGetMinX(tipsView.frame) + tipsView.width / 2.0f, CGRectGetMinY(tipsView.frame) + tipsView.height / 2.0f);
-    FDAnimationManagerView *managerView = [[FDAnimationManagerView alloc] initWithFrame:self.bounds andConfig:animationConfig];
+    FDAnimationManagerView *managerView = [[FDAnimationManagerView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height) andConfig:animationConfig];
     [managerView showAnimationManagerView:nil];
     
     @weakify(tipsView);
